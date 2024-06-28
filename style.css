@@ -78,22 +78,9 @@ nav{
     list-style: none;
     font-size: 1.5rem;
 }
-.dark_mode_icon{
-    width: max-content;
-    display: flex;
-    margin: auto;
-    padding: 5px;
-}
-.flag-icon{
-    width: max-content;
-    display: flex;
-    margin: auto;
-    padding: 5px;
-    height: 2.2rem;
-}
-.flag-icon:hover{
-    cursor:pointer;
-}
+
+
+
 a{
     color: var(--secondary-color);
     text-decoration: none;
@@ -145,10 +132,11 @@ background-color: var(--secondary-color);
 transition: all 0.3 ease-in-out;
 }
 .menu-links{
+    border-radius: 1rem;
     position: absolute;
     top: 100%;
     right: 0%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-2);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -250,11 +238,6 @@ margin-top: 1rem;
 gap: 1rem;
 }
 
-/*ICON*/
-.icon{
-    cursor: pointer;
-    height: 2rem;
-}
 /*buton*/
 .btn.container{
     display: flex;
@@ -449,4 +432,26 @@ footer{
 }
 footer p {
     text-align: center;
+}
+/*ICON*/
+.icon{
+    cursor: pointer;
+    height: 2rem;
+    
+}
+.dark_mode_icon{
+    width: max-content;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+.flag-icon{
+    width: max-content;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    height: 2.2rem;
+}
+.flag-icon:hover{
+    cursor:pointer;
 }
