@@ -1,0 +1,41 @@
+{
+    "title":"Turkish",
+    "nav":{
+        "about":"hakkımda",
+        "experience":"deneyim",
+        "projects":"projeler",
+        "contact":"iletişim"
+    },
+    "content":{
+        "p1":"Merhaba ,Ben",
+        "p2":"Web Geliştiricisi",
+        "p3":"daha fazlasını tanıyın",
+        "h2":"benim hakkımda",
+        "h3":"Deneyim",
+        "p4":"1+yıl Stajyer",
+        "h4":"Eğitim",
+        "p5":"Akdeniz Üniversitesi/Yönetim Bilişim Sistemleri Talas Mesleki ve Teknik Lisesi Bilgi Teknolojileri",
+        "p6":"Akdeniz Üniversitesi Yönetim Bilişim Sistemleri 4.sınıf öğrencisiyim. Genel Not Ortalaması: 4/3,20. 4. sınıfta derslerim az olduğu için,gönüllü staj yapmak istiyorum. Amacım deneyim kazanmak ve öğrenmek. Meslek lisesinden bilişim teknolojileri alanında mezun olduğum için her zaman yazılıma ilgi duydum.HTML ,CSS ,SQL ,C# ,Photoshop gibi dersler aldım .Üniversite derslerim de .NET ,OOP ,C# ,Mobil uygulama geliştirme gibi birçok benzer ders aldım.Sürekli gelişmeye istekliyim. Unity'de küçük bir oyun projem var. Kendi web sitem var. Ayrıca form ekranında birçok uygulama geliştirdim",
+        "p7":"Keşfedin",
+        "h5":"Deneyim",
+        "h6":"Frontend Development",
+        "pexp":"Tecrübeli",
+        "h11":"Backend Development",
+        "pb":"Basit Düzey",
+        "p8":"Göz At",
+        "h16":"Projelerim",
+        "h17":"NACKET OYUNU",
+        "p9":"Bu oyun Unity ile yapılmış ve Flappy Bird'den uyarlanmıştır.",
+        "h18":"SİYAH/BEYAZ MODU",
+        "p10":"Javascript kullanarak siyah beyaz mod yapma",
+        "h19":"Proje 3",
+        "p11":"Temasa Geç",
+        "h20":"Bana Ulaşın"
+    },
+    "buttons":{
+        "b1":"CV indir",
+        "b2":"İletişim"
+    },
+  "flagSrc": "./assets/tr.png"
+
+}

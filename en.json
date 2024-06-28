@@ -1,0 +1,41 @@
+{
+    "title":"My Portfolio",
+    "nav":{
+        "about":"about",
+        "experience":"experience",
+        "projects":"projects",
+        "contact":"contact"
+    },
+    "content":{
+        "p1":"Hello,I'am",
+        "p2":"Web Developer",
+        "p3":"get to know more",
+        "h2":"about me",
+        "h3":"Experience",
+        "p4":"1+years Intern",
+        "h4":"Education",
+        "p5":"Akdeniz University/Management Information Systems Vocational Technical High School Information Technologies",
+        "p6":"I am a 4th year student at Akdeniz University Management Information Systems. GPA: 4/3.20. Since I have few classes in the 4th year, I want to do a voluntary internship. My goal is to gain experience and learn. Since I graduated from vocational high school in the field of information technologies, I have always been interested in software. I took courses such as HTML, CSS, SQL, C#, Photoshop. In my university courses, I took many similar courses such as .NET, OOP, C#, Mobile application development. I am willing to constantly improve. I have a small game project in Unity. I have my own website. I also developed many applications on form screen",
+        "p7":"Explore my",
+        "h5":"Experience",
+        "h6":"Frontend Development",
+        "pexp":"Experienced",
+        "h11":"Backend Development",
+        "pb":"Basic",
+        "p8":"Browse My recent",
+        "h16":"Projects",
+        "h17":"NACKET GAME",
+        "p9":"This game was made with Unity and adapted from Flappy Bird.",
+        "h18":"DARK/WHITE MODE",
+        "p10":"Making a black and white mode with javascript",
+        "h19":"Project Three",
+        "p11":"Get in touch",
+        "h20":"Contact me"
+    },
+    "buttons":{
+        "b1":"DownloadCv",
+        "b2":"Contact"
+    },
+  "flagSrc": "./assets/eng.png"
+
+}

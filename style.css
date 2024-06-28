@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
 }
+
 h3{
     color: var(--secondary-color);
     
@@ -77,11 +78,21 @@ nav{
     list-style: none;
     font-size: 1.5rem;
 }
-nav li:last-child{
+.dark_mode_icon{
     width: max-content;
     display: flex;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
+}
+.flag-icon{
+    width: max-content;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    height: 2.2rem;
+}
+.flag-icon:hover{
+    cursor:pointer;
 }
 a{
     color: var(--secondary-color);

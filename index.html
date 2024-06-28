@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title id="title">My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">  
 </head>
@@ -13,18 +13,27 @@
         <div class="logo">Mustafa Ulusoy</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="text_about">About</a></li>
+                <li><a href="#experience" class="text_experience">Experience</a></li>
+                <li><a href="#projects" class="text_projects">Projects</a></li>
+                <li><a href="#contact" class="text_contact">Contact</a></li>
                 <li><img 
                     id="modeToggle"
-                    class="icon color-icon"
+                    class="icon color-icon dark_mode_icon"
                     src="./assets/theme_light.png"
                     src-light="./assets/theme_light.png" 
                     src-dark="./assets/theme_dark.png"
                     alt="Color them icon"
                  ></li>
+                 <li><img 
+                 src="./assets/eng.png" 
+                 alt="Change Language" 
+                 id="language-flag" 
+                 class="flag-icon"
+                 data-src-en="./assets/eng.png" 
+                 data-src-tr="./assets/tr.png">
+                 
+                </li>
 
             </ul>
         </div>
@@ -38,10 +47,10 @@
             <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about" class="text_about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" class="text_experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" class="text_projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" class="text_contact" onclick="toggleMenu()">Contact</a></li>
                 <li><img 
                     id="modeToggle2"
                     class="icon color-icon"
@@ -50,6 +59,13 @@
                     src-dark="./assets/theme_dark.png"
                     alt="Color them icon"
                  ></li>
+                <li><img 
+                    src="./assets/eng.png" 
+                    alt="Change Language" 
+                    id="language-flag" 
+                    data-src-en="./assets/eng.png" 
+                    data-src-tr="./assets/tr.png"
+                    class="flag-icon"></li>
 
             </div>
         </div>
@@ -59,14 +75,14 @@
             <img src="./assets/profile-picture.png" alt="Mustafa Ulusoy Picture" class="img-boyut">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello,I'am</p>
-            <h1 class="title">EMULUSOY</h1>
-            <p class="section__text__p2">Web Developer</p>
+            <p class="section__text__p1" id="text_p_1">Hello,I'am</p>
+            <h1 class="title">Mustafa Ulusoy!</h1>
+            <p class="section__text__p2" id="text_p_2">Web Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="openNewTab('./assets/cv.pdf')">
+                <button class="btn btn-color-2" id="text_button_1" onclick="openNewTab('./assets/cv.pdf')">
                     DownloadCv</button>
 
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    <button class="btn btn-color-1" id="text_button_2" onclick="location.href='./#contact'">
                         Contact</button>
             </div>
             <div id="social-container">
@@ -88,8 +104,8 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">get to know more</p>
-        <h1 class="title">about me</h1>
+        <p class="section__text__p1" id="text_p_3">get to know more</p>
+        <h1 class="title" id="text_h_2">about me</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/emu_about.png" alt="Profile Piture" class="about-pic">
@@ -102,8 +118,8 @@
                         src-dark="./assets/experience_dark.png" 
                         alt="experience icon" 
                         class="icon">
-                        <h3>Experience</h3>
-                        <p>1+years <br>Intern</p>
+                        <h3 id="text_h_3">Experience</h3>
+                        <p id="text_p_4">1+years <br>Intern</p>
                     </div>
                     <div class="details-container">
 
@@ -112,27 +128,13 @@
                         src-dark="./assets/education_dark.png" 
                         alt="experience icon" 
                         class="icon">
-                        <h3>Education</h3>
-                        <p>Akdeniz üniversitesi/Management Information Systems<br>Meslek Teknik Lisesi Bilişim Teknolojileri</p>
+                        <h3 id="text_h_4">Education</h3>
+                        <p id="text_p_5">Akdeniz University/Management Information Systems Vocational Technical High School Information Technologies</p>
 
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                         Sequi consectetur debitis nisi voluptatum natus dolorem.
-                          Neque quod, ipsum iste omnis pariatur minus vero hic libero numquam accusantium.
-                           Explicabo excepturi perferendis eos deserunt aut amet quos esse, culpa corporis vel? 
-                           Mollitia eum nam, eaque dolores earum possimus nihil officiis molestiae?
-                           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                           Sequi consectetur debitis nisi voluptatum natus dolorem.
-                            Neque quod, ipsum iste omnis pariatur minus vero hic libero numquam accusantium.
-                             Explicabo excepturi perferendis eos deserunt aut amet quos esse, culpa corporis vel? 
-                             Mollitia eum nam, eaque dolores earum possimus nihil officiis molestiae?
-                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                             Sequi consectetur debitis nisi voluptatum natus dolorem.
-                              Neque quod, ipsum iste omnis pariatur minus vero hic libero numquam accusantium.
-                               Explicabo excepturi perferendis eos deserunt aut amet quos esse, culpa corporis vel? 
-                               Mollitia eum nam, eaque dolores earum possimus nihil officiis molestiae?</p>          
+                    <p id="text_p_6">I am a 4th year student at Akdeniz University Management Information Systems. GPA: 4/3.20. Since I have few classes in the 4th year, I want to do a voluntary internship. My goal is to gain experience and learn. Since I graduated from vocational high school in the field of information technologies, I have always been interested in software. I took courses such as HTML, CSS, SQL, C#, Photoshop. In my university courses, I took many similar courses such as .NET, OOP, C#, Mobile application development. I am willing to constantly improve. I have a small game project in Unity. I have my own website. I also developed many applications on form screen</p>          
                 </div>
             </div>
         </div>
@@ -144,12 +146,12 @@
         onclick="location.href='./#experience'">
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore my</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1" id="text_p_7">Explore my</p>
+        <h1 class="title" id="text_h_5">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <h2 class="experience-sub-title" id="text_h_6">Frontend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark_light.png" 
@@ -158,8 +160,8 @@
                             alt="experience icon" 
                             class="icon">
                             <div>
-                                <h3>HTML</h3>
-                                <P>Experienced</P>
+                                <h3 id="text_h_7">HTML</h3>
+                                <P class="text_p_experienced">Experienced</P>
                             </div>
                         </article>
                         <article>
@@ -168,8 +170,8 @@
                             src-dark="./assets/checkmark_dark.png" 
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>CSS</h3>
-                                <P>Experienced</P>
+                                <h3 id="text_h_8">CSS</h3>
+                                <P class="text_p_experienced">Experienced</P>
                             </div>
                         </article>                  
                         <article>
@@ -178,8 +180,8 @@
                             src-dark="./assets/checkmark_dark.png" 
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>JavaScript</h3>
-                                <P>Intermediate</P>
+                                <h3 id="text_h_9">JavaScript</h3>
+                                <P id="text_p_intermediate">Intermediate</P>
                             </div>
                         </article>
                         <article>
@@ -189,15 +191,15 @@
                             alt="experience icon"
                             class="icon">
                             <div>
-                                <h3>AI Promts</h3>
-                                <P>Experienced</P>
+                                <h3 id="text_h_10">AI Promts</h3>
+                                <P class="text_p_experienced">Experienced</P>
                             </div>
                         </article>
                         
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <h2 class="experience-sub-title" id="text_h_11">Backend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark_light.png" 
@@ -205,8 +207,8 @@
                             src-dark="./assets/checkmark_dark.png"
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>SQL</h3>
-                                <P>Basic</P>
+                                <h3 id="text_h_12">SQL</h3>
+                                <P id="text_p_basic">Basic</P>
                             </div>
                         </article>
                         <article>
@@ -215,8 +217,8 @@
                             src-dark="./assets/checkmark_dark.png" 
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>C#</h3>
-                                <P>Experienced</P>
+                                <h3 id="text_h_13">C#</h3>
+                                <P class="text_p_experienced">Experienced</P>
                             </div>
                         </article>                  
                         <article>
@@ -225,8 +227,8 @@
                             src-dark="./assets/checkmark_dark.png"
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>Git</h3>
-                                <P>Intermediate</P>
+                                <h3 id="text_h_14">Git</h3>
+                                <P id="text_p_intermediate">Intermediate</P>
                             </div>
                         </article>
                         <article>
@@ -235,8 +237,8 @@
                             src-dark="./assets/checkmark_dark.png"
                             alt="experience icon" class="icon">
                             <div>
-                                <h3>AI Promts</h3>
-                                <P>Experienced</P>
+                                <h3 id="text_h_15">AI Promts</h3>
+                                <P class="text_p_experienced">Experienced</P>
                             </div>
                         </article>
                         
@@ -252,18 +254,18 @@
         onclick="location.href='./#projects'">
     </section>
     <section id="projects">
-        <p class="section__text__p1">Browse My recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1" id="text_p_8">Browse My recent</p>
+        <h1 class="title" id="text_h_16">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
                     <img src="./assets/nacket.png" alt="Projects 1" class="projects-img" >
                 </div>
-                <h2 class="experience-sub-title project-title">NACKET GAME</h2>
-                <p class="section__text__p1 project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                <h2 class="experience-sub-title project-title" id="text_h_17">NACKET GAME</h2>
+                <p class="section__text__p1 project_t" id="text_p_9">This game was made with Unity and adapted from Flappy Bird.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    <button class="btn btn-color-2 project-btn" id="text_button_3" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
           
                 </div>
             </div>
@@ -271,10 +273,10 @@
                 <div class="article-container">
                     <img src="./assets/Project_DW_Mode.png" alt="Projects 1" class="projects-img" >
                 </div>
-                <h2 class="experience-sub-title project-title">DARK/WHITE MODE</h2>
-                <p class="section__text__p1 project_t">Making a black and white mode with javascript</p>
+                <h2 class="experience-sub-title project-title" id="text_h_18">DARK/WHITE MODE</h2>
+                <p class="section__text__p1 project_t" id="text_p_10" >Making a black and white mode with javascript</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    <button class="btn btn-color-2 project-btn" id="text_button_3" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
                 
                 </div>
             </div>
@@ -283,9 +285,9 @@
                 <div class="article-container">
                     <img src="./assets/project-3.png" alt="Projects 1" class="projects-img" >
                 </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <h2 class="experience-sub-title project-title" id="text_h_19">Project Three</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    <button class="btn btn-color-2 project-btn" id="text_button_3" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
                 
                 </div>
             </div>
@@ -299,8 +301,8 @@
     onclick="location.href='./#contact'">
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in touch</p>
-        <h1 class="title">Contact me </h1>
+        <p class="section__text__p1" id="text_p_11">Get in touch</p>
+        <h1 class="title" id="text_h_20">Contact me</h1>
         <div class="contact-info-upper-container">  
             <div class="contact-info-container">
                 <img src="./assets/email_light.png" 
@@ -308,14 +310,14 @@
                 src-dark="./assets/email_dark.png"
                 alt="email icon" 
                 class="icon email-icon">
-                <p><a href="mailto:emuworks38@gmail.com">emuworks38@gmail.com</a></p>
+                <p><a href="mailto:emuworks38@gmail.com" id="text_p_mail">emuworks38@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin_light.png" 
                 src-light="./assets/linkedin_light.png" 
                 src-dark="./assets/linkedin_dark.png"              
                 alt="linkedin icon" class="icon linkedin-icon">
-                <p><a href="https://www.linkedin.com/in/mustafa-ulusoy-61167b299/?original_referer=http%3A%2F%2F127.0.0.1%3A5500%2F">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/mustafa-ulusoy-61167b299/?original_referer=http%3A%2F%2F127.0.0.1%3A5500%2F" id="text_p_linkedin">LinkedIn</a></p>
 
             </div>
         </div>
@@ -324,10 +326,10 @@
         <nav>
         <div class="nav-links-container">
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="text_about">About</a></li>
+                <li><a href="#experience" class="text_experience">Experience</a></li>
+                <li><a href="#projects" class="text_projects">Projects</a></li>
+                <li><a href="#contact" class="text_contact">Contact</a></li>
 
             </ul>
         </div>
