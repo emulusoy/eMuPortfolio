@@ -22,6 +22,7 @@
         "pexp":"Tecrübeli",
         "h11":"Backend Development",
         "pb":"Basit Düzey",
+        "pint":"Orta Düzey",
         "p8":"Göz At",
         "h16":"Projelerim",
         "h17":"NACKET OYUNU",
@@ -29,8 +30,9 @@
         "h18":"SİYAH/BEYAZ MODU",
         "p10":"Javascript kullanarak siyah beyaz mod yapma",
         "h19":"Proje 3",
-        "p11":"Temasa Geç",
-        "h20":"Bana Ulaşın"
+        "h20":"Bana Ulaşın",
+        "p11":"Temasa Geç"
+        
     },
     "buttons":{
         "b1":"CV indir",

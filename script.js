@@ -109,9 +109,8 @@ function loadLanguage(lang) {
         }
         */
        const languageFlag = document.getElementById('language-flag');
-let currentLang = 'en';
-
-languageFlag.addEventListener('click', function() {
+       let currentLang = 'en';
+       languageFlag.addEventListener('click', function() {
     currentLang = (currentLang === 'en') ? 'tr' : 'en';
     loadLanguage(currentLang);
 });
@@ -154,6 +153,7 @@ function loadLanguage(lang) {
             document.getElementById('text_h_17').textContent = data.content.h17;
             document.getElementById('text_h_18').textContent = data.content.h18;
             document.getElementById('text_h_19').textContent = data.content.h19;
+            document.getElementById('text_h_20').textContent = data.content.h20;
             //Butonlar
             document.getElementById('text_button_1').textContent = data.buttons.b1;
             document.getElementById('text_button_2').textContent = data.buttons.b2;
@@ -167,7 +167,7 @@ function loadLanguage(lang) {
             languageFlag.src = data.flagSrc;
 
             // Hata durumu
-        }).catch(error => console.error('Dil dosyası yüklenirken hata oluştu:', error));
+        }).catch(error => console.error('hata oluştu:', error));
 }
 document.addEventListener('DOMContentLoaded', function() {
   // Tarayıcı dil ayarını kontrol ederek varsayılan dil belirleme
