@@ -175,4 +175,16 @@ document.addEventListener('DOMContentLoaded', function() {
   currentLang = (userLang.startsWith('tr')) ? 'tr' : 'en';
   loadLanguage(currentLang);
 });
-        
+
+/*hhamburger için */
+const languageFlagHamburger = document.getElementById('language-flag-hamburger');
+function changeLanguage() {
+  currentLang = (currentLang === 'en') ? 'tr' : 'en';
+  loadLanguage(currentLang);
+}
+languageFlag.src = languageFlag.getAttribute('data-src-' + lang);
+languageFlag.addEventListener('click', changeLanguage);
+languageFlagHamburger.addEventListener('click', changeLanguage);
+languageFlagHamburger.src = languageFlagHamburger.getAttribute('data-src-' + lang);
+
+
