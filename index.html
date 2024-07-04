@@ -15,6 +15,7 @@
         <div class="logo">Mustafa Ulusoy</div>
         <div>
             <ul class="nav-links">
+                
                 <li><a href="#about" class="text_about">About</a></li>
                 <li><a href="#experience" class="text_experience">Experience</a></li>
                 <li><a href="#projects" class="text_projects">Projects</a></li>
@@ -25,10 +26,11 @@
                 <li><img src="./assets/eng.png" alt="Change Language" id="language-flag" class="flag-icon"
                         data-src-en="./assets/eng.png" data-src-tr="./assets/tr.png">
                 </li>
-
+                <li><a href="./todo/todo-list.html" class="todo__list__menu">ToDo</a></li>
             </ul>
         </div>
     </nav>
+    <hr class="navbar-divider">
     <nav id="hamburger-nav">
         <div class="logo">Mustafa Ulusoy</div>
         <div class="hamburger-menu">
@@ -38,6 +40,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                
                 <li><a href="#about" class="text_about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" class="text_experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" class="text_projects" onclick="toggleMenu()">Projects</a></li>
@@ -47,7 +50,9 @@
                 </li>
                 <li><img src="./assets/eng.png" alt="Change Language" id="language-flag-hamburger"
                         data-src-en="./assets/eng.png" data-src-tr="./assets/tr.png" class="flag-icon"
-                        onclick="changeLanguage()">></li>
+                        onclick="changeLanguage()">>
+                </li>
+                <li><a href="./todo/todo-list.html" class="todo__list__menu">ToDo</a></li>
 
             </div>
         </div>
@@ -76,7 +81,6 @@
                 <img src="./assets/github_light.png" src-light="./assets/github_light.png"
                     src-dark="./assets/github_dark.png" alt="My Github Profile" class="icon github-icon"
                     onclick="location.href='https://github.com/emulusoy'">
-
 
             </div>
         </div>
@@ -249,8 +253,8 @@
                 <h2 class="experience-sub-title project-title" id="text_h_18">DARK/WHITE MODE</h2>
                 <p class="section__text__p1 project_t" id="text_p_10">Making a black and white mode with javascript</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" id="text_button_3"
-                        onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    <a href="#modeToggle"><button class="btn btn-color-2 project-btn" id="text_button_3"
+                        >Bak</button></a>
 
                 </div>
             </div>

@@ -71,14 +71,19 @@ nav,.nav-links{
 }
 nav{
     justify-content: space-around;/*divlerin nasıl sıralanacağını gösterir*/
-    height: 17vh;
+    height: 10vh;
+
 }
 .nav-links{/**/
-    gap: 2rem;
+    gap: 1.7rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
+.navbar-divider {
+    border: 0; /* Kenar çizgisini kaldırır */
+    border-top: 1px solid #ccc; /* Üstten 1 piksel kalınlığında ve gri renkte çizgi ekler */
+    margin: 10px 0; /* Çizginin navbar'dan aşağıya olan boşluğunu ayarlar */
+  }
 
 
 a{
