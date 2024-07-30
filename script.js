@@ -188,3 +188,6 @@ languageFlagHamburger.addEventListener('click', changeLanguage);
 languageFlagHamburger.src = languageFlagHamburger.getAttribute('data-src-' + lang);
 
 
+  //slider
+
+

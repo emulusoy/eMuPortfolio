@@ -1,7 +1,7 @@
 /* GENERAL STYLE  genel css ayarlarını yaparız*/ 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
 
 /*default white mode*/
 /*BİZ BURADA FONKSİYON GİBİ ROOT VERİYORUZ VE BUNU P DEKİ COLOR DEĞİŞİMİNDE VAR() İÇİNDE ÇAĞIRARAK
@@ -47,7 +47,7 @@ h3{
     
 }
 body{
-    font-family: "Poppins", sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--background-color);
 }
 html{
@@ -75,14 +75,15 @@ nav{
 
 }
 .nav-links{/**/
-    gap: 1.7rem;
+    gap: 1.5rem;
     list-style: none;
     font-size: 1.3rem;
+    padding-top: 1rem;
 }
 .navbar-divider {
     border: 0; /* Kenar çizgisini kaldırır */
     border-top: 1px solid #ccc; /* Üstten 1 piksel kalınlığında ve gri renkte çizgi ekler */
-    margin: 10px 0; /* Çizginin navbar'dan aşağıya olan boşluğunu ayarlar */
+    margin-top: 10px; /* Çizginin navbar'dan aşağıya olan boşluğunu ayarlar */
   }
 
 
@@ -94,18 +95,18 @@ a{
 }
 a:hover{
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 0.3rem;
     text-decoration-color: var(--secondary-color);
 }
 nav a:hover{
     color: var(--secondary-color);
     text-decoration-color: var(--secondary-color);
 }
-.logo{
+.logo-bar{
     font-size: 2rem;
     color: var(--secondary-color);
 }
-.logo:hover{
+.logo-bar:hover{
     cursor: default;
 }
 /*HAMBURGER MENU 
@@ -448,7 +449,7 @@ footer p {
     width: max-content;
     display: block;
     margin: auto;
-    padding: 5px;
+    height:20px;
 }
 .flag-icon{
     width: max-content;

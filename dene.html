@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Genel CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+        :root {
+            --primary-color: white;
+            --primary-color-2: rgb(250, 250, 250);
+            --primary-color-3: rgb(181, 181, 181);
+            --background-color: rgb(255, 255, 255);
+            --secondary-color: black;
+            --secondary-color-2: rgb(85, 85, 85);
+            --button-background: rgb(53, 53, 53);
+            --button-text-hover: grey;
+            --button-border: rgb(53, 53, 53) 0.1rem solid;
+            --button-border-2: rgb(255, 255, 255) 0.1rem solid;
+            --container-border: rgb(163, 163, 163);
+        }
+        [theme="dark"] {
+            --primary-color: black;
+            --primary-color-2: rgb(39, 39, 39);
+            --primary-color-3: rgb(74, 74, 74);
+            --background-color: rgb(33, 33, 33);
+            --secondary-color: white;
+            --secondary-color-2: rgb(170, 170, 170);
+            --button-background: rgb(202, 202, 202);
+            --button-text-hover: lightgrey;
+            --button-border: rgb(202, 202, 202) 0.1rem solid;
+            --button-border-2: rgb(0, 0, 0) 0.1rem solid;
+            --container-border: rgb(92, 92, 92);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: var(--background-color);
+        }
+        section {
+            padding: top 4vh;
+            height: 96vh;
+            margin: 0 10rem;
+            box-sizing: border-box;
+            min-height: fit-content;
+        }
+        .projects-slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .projects-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .projects-slider .details-container {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 1rem;
+        }
+        .color-container {
+            border-color: var(--container-border);
+            background: var(--primary-color-2);
+            border-radius: 2rem;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .projects-img {
+            border-radius: 2rem;
+            width: 100%;
+            height: auto;
+        }
+        .project-title {
+            margin: 1rem 0;
+            color: var(--secondary-color);
+        }
+        .project-btn {
+            color: var(--secondary-color);
+            border-color: var(--container-border);
+        }
+        .projects-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .projects-nav button {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section id="projects">        
+        <div class="projects-slider-container">
+            <div class="projects-slider">
+                <div class="details-container color-container">
+                    <img src="./assets/nacket.png" alt="Projects 1" class="projects-img">
+                    <h2 class="project-title">NACKET GAME</h2>
+                    <p class="project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/nacket.png" alt="Projects 1" class="projects-img">
+                    <h2 class="project-title">NACKET GAME</h2>
+                    <p class="project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/nacket.png" alt="Projects 1" class="projects-img">
+                    <h2 class="project-title">NACKET GAME</h2>
+                    <p class="project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/Project_DW_Mode.png" alt="Projects 2" class="projects-img">
+                    <h2 class="project-title">DARK/WHITE MODE</h2>
+                    <p class="project_t">Making a black and white mode with javascript</p>
+                    <div class="btn-container">
+                        <a href="#modeToggle"><button class="btn btn-color-2 project-btn">Bak</button></a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/todo_project.png" alt="Projects 3" class="projects-img">
+                    <h2 class="project-title">Project Todo/List!</h2>
+                    <p class="project_t">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <div class="btn-container">
+                        <a href="todo/todo-list.html"><button class="btn btn-color-2 project-btn">TodoList</button></a>
+                    </div>
+                </div>
+                <!-- Eklenen projeler -->
+                <!-- 10 tane proje ekleyin buraya -->
+                <div class="details-container color-container">
+                    <img src="./assets/todo_project.png" alt="Projects 3" class="projects-img">
+                    <h2 class="project-title">Project Todo/List!</h2>
+                    <p class="project_t">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <div class="btn-container">
+                        <a href="todo/todo-list.html"><button class="btn btn-color-2 project-btn">TodoList</button></a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/nacket.png" alt="Projects 1" class="projects-img">
+                    <h2 class="project-title">NACKET GAME</h2>
+                    <p class="project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/nacket.png" alt="Projects 1" class="projects-img">
+                    <h2 class="project-title">NACKET GAME</h2>
+                    <p class="project_t">This game was made with Unity and adapted from Flappy Bird.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="openNewTab('https://github.com/NakaBird/NakaBird')">Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-nav">
+                <button id="prev">‹</button>
+                <button id="next">›</button>
+            </div>
+        </div>
+        <script>
+            const slider = document.querySelector('.projects-slider');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            let index = 0;
+            const slidesToShow = 3;
+            const totalSlides = document.querySelectorAll('.details-container').length;
+
+            function updateSlider() {
+                const offset = -index * (100 / slidesToShow);
+                slider.style.transform = `translateX(${offset}%)`;
+            }
+
+            prevButton.addEventListener('click', () => {
+                if (index > 0) {
+                    index--;
+                } else {
+                    index = totalSlides - slidesToShow;
+                }
+                updateSlider();
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (index < totalSlides - slidesToShow) {
+                    index++;
+                } else {
+                    index = 0;
+                }
+                updateSlider();
+            });
+
+            updateSlider(); 
+             
+        </script>
+    </section>
+</body>
+</html>
